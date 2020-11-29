@@ -1,5 +1,8 @@
 function getIssues(data) {
-  fetch(`${baseApi}repos/${fork}/issues`)
+  fetch(`${baseApi}repos/${fork}/issues`).
+    then(resp => {
+      
+    })
 }
 
 function showIssues(json) {
