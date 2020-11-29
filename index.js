@@ -32,7 +32,10 @@ function createIssue() {
   fetch(`${baseApi}repos/${fork}/issues`, {
     method: 'post',
     headers: {
-  })
+      'Authorization': `token ${getToken()}`
+    },
+    body: JSON.stringify(postData)
+  }).then(resp => getIssues())
 }
 
 function getIssues(data) {
