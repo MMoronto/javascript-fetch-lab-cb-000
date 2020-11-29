@@ -2,7 +2,7 @@ function getIssues(data) {
   fetch(`${baseApi}repos/${fork}/issues`).
     then(resp => {
       resp.json().then(data => {
-        
+        for (let i=0; i < data.length; i++){
       })
     })
 }
