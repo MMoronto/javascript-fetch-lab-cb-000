@@ -37,11 +37,11 @@ function getIssues(data) {
     })
 }
 
-function displayIssues(issue) {
+function displayIssue(issue) {
   $('#issues').append(issue.template())
 }
 
-//Fetch and shoe Repo info
+//Fetch and show Repo info
 
 function createIssue() {
 }
