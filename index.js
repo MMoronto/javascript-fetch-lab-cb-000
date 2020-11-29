@@ -58,9 +58,6 @@ function displayIssue(issue) {
 //Fetch and show Repo info
 
 
-function showResults(json) {
-}
-
 function forkRepo() {
   const repo = 'learn-co-curriculum/javascript-fetch-lab'
   
