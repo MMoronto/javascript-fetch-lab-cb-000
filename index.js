@@ -38,6 +38,8 @@ function createIssue() {
   }).then(resp => getIssues())
 }
 
+//Fetch all issues through the Github API and display / append to the DOM
+
 function getIssues(data) {
   fetch(`${baseApi}repos/${fork}/issues`).
     then(resp => {
