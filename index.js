@@ -38,7 +38,10 @@ function getIssues(data) {
 }
 
 function displayIssues(issue) {
+  $('#issues').append(issue.template())
 }
+
+//Fetch and shoe Repo info
 
 function createIssue() {
 }
