@@ -1,3 +1,19 @@
+const userName = ''
+const baseApi = 'https://api.github.com/'
+const fork = `${userName}/javascript-fetch-lab`
+
+//Issue and Repo objects and templates
+
+function Issue(attributes) {
+  this.title = attributes.title;
+  this.body = attributes.body;
+  this.url = attributes.url;
+}
+
+function Repo(attributes) {
+  
+}
+
 function getIssues(data) {
   fetch(`${baseApi}repos/${fork}/issues`).
     then(resp => {
