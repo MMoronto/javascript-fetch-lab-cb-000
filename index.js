@@ -26,6 +26,10 @@ Repo.prototype.template = function(){
 //Create an issue through the Github API
 
 function createIssue() {
+  const issueTitle = document.getElementById('title').value
+  const issueBody = document.getElementById('body').value
+  const postData = { title: issueTitle, body: issueBody }
+  fetch(`${baseApi}repos/${fork}/issues`, {})
 }
 
 function getIssues(data) {
