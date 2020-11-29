@@ -11,8 +11,20 @@ function Issue(attributes) {
 }
 
 function Repo(attributes) {
-  
+  this.url = attributes.url;
 }
+
+Issue.prototype.template = function() {
+  var template = `<li>Title: <a href="${this.url}">${this.title} </a><span> | Body: ${this.body}</span></li>`
+  return template;
+};
+
+Repo.prototype.template = function(){
+  var template = `<h3>Forked Successfully!</h3><a href="${this.url}"> ${this.url}</a>`
+  return template;
+};
+//Create an issue through the Github API
+
 
 function getIssues(data) {
   fetch(`${baseApi}repos/${fork}/issues`).
@@ -25,7 +37,7 @@ function getIssues(data) {
     })
 }
 
-function showIssues(json) {
+function displayIssues(issue) {
 }
 
 function createIssue() {
