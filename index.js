@@ -25,6 +25,8 @@ Repo.prototype.template = function(){
 };
 //Create an issue through the Github API
 
+function createIssue() {
+}
 
 function getIssues(data) {
   fetch(`${baseApi}repos/${fork}/issues`).
@@ -43,8 +45,6 @@ function displayIssue(issue) {
 
 //Fetch and show Repo info
 
-function createIssue() {
-}
 
 function showResults(json) {
 }
